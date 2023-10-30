@@ -1,0 +1,60 @@
+@import "../../styles/feature.scss";
+
+.dashboard {
+  @include flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  // border: 2px solid red;
+  // height: 100vh;
+}
+.profile {
+  // border: 2px solid blue;
+  @include flex;
+  padding: 20px;
+  flex-wrap: wrap;
+  .avatar {
+    // border: 2px solid red;
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    img {
+      height: 100%;
+      width: 100%;
+      border-radius: 100%;
+    }
+  }
+  .details {
+    padding: 10px;
+    .profile-btn {
+      margin-top: 20px;
+      button {
+        margin-right: 10px;
+        padding: 10px 20px;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+.charts {
+  // border: 2px solid red;
+  height: 300px;
+  width: 500px;
+  @include flex;
+}
+
+@media screen and (max-width: 530px) {
+  .charts {
+    // border: 2px solid red;
+    // height: 300px;
+    width: 400px;
+    @include flex;
+  }
+}
+@media screen and (max-width: 450px) {
+  .charts {
+    // border: 2px solid red;
+    // height: 300px;
+    width: 350px;
+    @include flex;
+  }
+}
